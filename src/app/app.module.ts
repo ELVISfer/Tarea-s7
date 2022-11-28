@@ -1,16 +1,14 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { RouterModule } from '@angular/router';
 
-import { AppRoutingModule } from './app-routing.module';
+import { AppRoutingModule, routingComponent } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { PrimerapantallaComponent } from './primerapantalla/primerapantalla.component';
-import { SegundapantallaComponent } from './segundapantalla/segundapantalla.component';
-
+RouterModule.forRoot
 @NgModule({
   declarations: [
     AppComponent,
-    PrimerapantallaComponent,
-    SegundapantallaComponent
+routingComponent
   ],
   imports: [
     BrowserModule,

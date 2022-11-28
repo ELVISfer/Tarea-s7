@@ -4,13 +4,17 @@ import { PrimerapantallaComponent } from './primerapantalla/primerapantalla.comp
 import { SegundapantallaComponent } from './segundapantalla/segundapantalla.component';
 
 const routes: Routes = [
-
-  {path: 'primerapantalla', component: PrimerapantallaComponent},
-  {path: 'segundapantalla', component:SegundapantallaComponent}
+  { path: 'primerapantalla', component: PrimerapantallaComponent },
+  { path: 'primerapantalla/titulo:', component: PrimerapantallaComponent },
+  { path: 'segundapantalla', component: SegundapantallaComponent },
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}
+export const routingComponent = [
+  PrimerapantallaComponent,
+  SegundapantallaComponent,
+];
